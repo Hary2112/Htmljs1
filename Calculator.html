@@ -1,0 +1,97 @@
+<html>
+    <head>
+        <title>JS Calculator</title>
+        <link href="Calc.css" rel="stylesheet">
+        <script src="Calc.js"></script>
+    </head>
+    <body>
+        <div class="main-box">
+            <h1>Calculator</h1>
+            <form id="calform">
+            <div class="input-box">
+                <input type="text" id="maintext" style="text-align: right;" readonly/>
+            </div>
+            <table>
+                <tr>
+                    <td colspan="3">
+                        <button type="button" onclick="Selected(7)">7</button>
+                    </td>
+                    <td colspan="3">
+                        <button type="button" onclick="Selected(8)">8</button>
+                    </td>
+                    <td colspan="3">
+                        <button type="button" onclick="Selected(9)">9</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3">
+                        <button type="button" onclick="Selected(4)">4</button>
+                    </td>
+                    <td colspan="3">
+                        <button type="button" onclick="Selected(5)">5</button>
+                    </td>
+                    <td colspan="3">
+                        <button type="button" onclick="Selected(6)">6</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3">
+                        <button type="button" onclick="Selected(1)">1</button>
+                    </td>
+                    <td colspan="3">
+                        <button type="button" onclick="Selected(2)">2</button>
+                    </td>
+                    <td colspan="3">
+                        <button type="button" onclick="Selected(3)">3</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3">
+                        
+                    </td>
+                    <td colspan="3">
+                        <button type="button" onclick="Selected(0)">0</button>
+                    </td>
+                    <td colspan="3">
+                        <button type="button" onclick="backspace()">&#9003;</button>
+                    </td>
+                </tr>
+            </table>
+            <table>
+            
+            
+                <tr>
+                    <td colspan="2">
+                        <button type="button" onclick="Selected('+')">+</button>
+                    </td>
+                    <td colspan="2">
+                        <button type="button" onclick="Selected('-')">-</button>
+                    </td>
+                    </tr>
+                    <tr>
+                    <td colspan="2">
+                         <button type="button" onclick="Selected('*')">X</button>
+                    </td>
+                    <td colspan="2">
+                        <button type="button" onclick="Selected('/')">/</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <button type="button" onclick="calculate()">=</button>
+                    </td>
+                    <td colspan="2">
+                        <button type="button" onclick="clean()">C</button>
+                    </td>
+                </tr>
+            </table>
+            <div class="recents">
+                <h2>Recent</h2>
+                <p id="hist"></p>
+            </div>
+
+          
+
+        </div>
+    </body>
+</html>

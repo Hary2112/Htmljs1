@@ -1,0 +1,143 @@
+<html>
+    <head>
+        <script>
+        
+            function Pattern(){
+                var n=document.getElementById("num").value;
+                var s="";
+                for(let i=1;i<=n;i++){
+                    for (let j=1;j<=i;j++){
+                        s=s+"* "
+                    }
+                    s=s+"<br>"
+                }
+                document.getElementById("pat").innerHTML=s;
+            } 
+            function Pattern2(){
+                var n=document.getElementById("num").value;
+                var s='';
+                for(let i=1;i<=n;i++){
+                    s=s+'&nbsp'
+                    for (let j=1;j<=n-i;j++){
+                        s=s+'&nbsp'
+                    }
+                    for(let k=1;k<=i;k++){
+                        s=s+'*'+'&nbsp'
+                    }
+                    s=s+"<br>"
+                }
+                document.getElementById("pat").innerHTML=s;
+            }
+
+            let age=15;
+            let msg=(age>=18)?"Adult":"Minor";
+            console.log(msg);
+
+            let m=95;
+            let grade=(m>=90)?"A":(m>=80)?"B":(m>=70)?"C":(m>=60)?"D":"F";
+            console.log(grade);
+
+        </script>
+
+    </head>
+    <body>
+        <input type="number" id="num" placeholder="Enter a Number">
+        <button type="submit" onclick="Pattern()">Pattern</button>
+        <button type="submit" onclick="Pattern2()">Pattern2</button>
+        <h2 id="pat"></h2>
+    </body>
+</html>
+
+
+
+<!--
+
+
+
+function comparison(){
+                var a="10";
+                console.log(a==10);
+                console.log(a===10);
+            }
+        comparison();
+
+
+
+function logical(){
+                if(true&&false){
+                    console.log("AND");
+                }
+                if(true||false){
+                    console.log("OR");
+                }
+            }
+        logical();
+
+
+
+function logical2(){
+                let a=20;
+                let b=10;
+                let c=5;
+                console.log("(a<b && a<c) is",(a<b && a<c));
+                console.log("(a<b && a>c) is",(a<b && a>c));
+                console.log("(a>b && a<c) is",(a>b && a<c));
+                console.log("(a>b && a>c) is",(a>b && a>c));
+                console.log("-----------------------------");
+                console.log("(a<b || a<c) is",(a<b || a<c));
+                console.log("(a<b || a>c) is",(a<b || a>c));
+                console.log("(a>b || a<c) is",(a>b || a<c));
+                console.log("(a>b || a>c) is",(a>b || a>c));
+
+                console.log("(a>b && a>c) is",(a>b && a>c));//true
+                console.log("!(a>b && a>c) is",!(a>b && a>c));//false
+
+
+            }
+        logical2();
+
+
+
+function bitwiseoperators(){
+                let a=2;//0010
+                let b=5;//0101
+                let c=7;//0111
+                console.log("a&b is ",a&b);
+                console.log("a|b is ",a|b);
+                console.log("c<<1 is ",c<<1);
+                console.log("c>>1 is ",c>>1);
+            }
+        bitwiseoperators();
+
+
+
+function prepost(){
+                let a=10;
+                console.log("Initial value of a:",a);
+                console.log("Prefix Increment value of a:",(++a));
+                console.log("Value of a after increment:",a);
+
+                let b=20;
+                console.log("Initial value of b:",b);
+                console.log("Post Increment value of b:",(b++));
+                console.log("Value of a after increment:",b);
+            }
+        prepost();
+
+
+function prepost2(){
+                let a=10;
+                console.log("Initial value of a:",a);
+                console.log("Prefix Decrement value of a:",(--a));
+                console.log("Value of a after decrement:",a);
+
+                let b=20;
+                console.log("Initial value of b:",b);
+                console.log("Post Decrement value of b:",(b--));
+                console.log("Value of a after decrement:",b);
+            }
+        prepost2();
+
+
+88936128233        
+-->

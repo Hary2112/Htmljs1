@@ -1,0 +1,70 @@
+<html>
+    <head>
+        <title>WebPagejs1</title>
+        <script>
+            function myfunction(){
+                document.getElementById("myid").style.color="green";
+            }
+        </script>
+        <script src="webpagejs1.js"></script>
+    </head>
+    <body>
+        <h2 id="myid">Welcome to HTML</h2>
+
+        <div id="head"></div>
+        
+        <button type="button" onclick='document.getElementById("myid").innerHTML="Welcome to Javascript"'>Change Text</button>
+        
+        <button type="button" onclick='document.getElementById("myid").style.color="red"'>Red Color</button>
+
+        <button type="button" onclick="myfunction()">Green Color</button>
+        
+        <button type="button" onclick="mymethod()">External JS</button>
+
+        <br><br>
+        <input type="text" id="age" placeholder="Enter Age">
+        <button type="button" onclick="AgeCheck()">Submit</button>
+       <br><br>
+    <textarea rows="5" type="text" placeholder="Tell about your favorite cartoon" id="cartoon" style="display: none;"></textarea><br><br>
+    <div id="kform" style="display: none;">
+        <input type="text" placeholder="Enter School Name"><br><br>
+        <input type="text" placeholder="Enter Your Class"><br><br>
+        <button type="button">Submit</button>
+    </div>
+    <script>
+        let studentid=100;
+        let sname="Harry";
+        let Subs=["Math","English","Business"];
+        let student={
+            id:studentid,
+            name:sname,
+            Courses:Subs
+        }
+        console.log("Student Name",sname);
+        console.log("Student Object",student);
+        alert(
+            "Student ID :"+student.id+'\n'+
+            "Student Name : "+student.name+'\n'+
+            "Courses : "+
+            student.Courses[0]+"-"+student.Courses[1]+"-"+student.Courses[2]);
+        
+    </script>
+    <script>
+        function func(){
+            var a=10;
+            let b=20;
+            const c=30;
+            console.log(a+"-"+b+"-"+c);
+            {
+                a=20;
+                let b=40;
+                const c=50;
+                console.log(a+"-"+b+"-"+c);
+            }
+            console.log(a+"-"+b+"-"+c);
+        }
+    </script>
+    <br><br>
+    <button type="button" onclick="func()">Scope</button>
+</body>
+</html>

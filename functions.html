@@ -1,0 +1,62 @@
+<html>
+    <head>
+        <script>
+            function f1(){
+                console.log("Function 1");
+
+            }
+            function f2(a){
+                console.log("Value of a is ",a);
+
+            }
+            function square(b){
+                return b*b;
+            }
+            //Function Expression
+            let Mul=function(k,l,m){
+                return k*l*m;
+            }
+            //Arrow Function
+            let powerfour=(m)=> m*m*m*m;
+
+
+            f1();
+
+            f2(3);
+
+            console.log(square(10));
+
+            console.log(Mul(5,6,7));
+
+            console.log(powerfour(5));
+
+            let status=(age)=> (age>=18)? "Major":"Minor";
+            /* 
+                    ||
+                    \/
+            
+            This line is Same as
+
+            function status(age){
+                if(age>=18){
+                    return "Major";
+                }
+                else{
+                    return "Minor";
+                }
+            }
+
+            */
+
+            console.log(status(15));
+            console.log(status(25));
+
+
+
+        </script>
+
+    </head>
+    <body>
+
+    </body>
+</html>
