@@ -86,3 +86,7 @@ table button:hover {
             padding: 10px 15px;
             border-radius: 5px;
         }
+
+#hist {
+    white-space: pre-wrap;
+}
