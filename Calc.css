@@ -90,3 +90,14 @@ table button:hover {
 #hist {
     white-space: pre-wrap;
 }
+button{
+    width: 100%;
+    color: white;
+    background-color: red;
+    border: none;
+
+}
+button:hover{
+    
+    cursor: pointer;
+}

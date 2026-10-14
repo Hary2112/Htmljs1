@@ -14,9 +14,7 @@ function calculate(){
 function history(str1,str2){
     temp += `\n\n${str1}=${str2}`;
     document.getElementById("hist").textContent=temp;
-
 }
-
 function backspace(){
     mainstring=mainstring.slice(0,-1);
     document.getElementById("maintext").value=mainstring;
@@ -24,4 +22,7 @@ function backspace(){
 function clean(){
     mainstring="";
     document.getElementById("maintext").value=mainstring;
+}
+function clearhistory(){
+    document.getElementById("hist").textContent="";
 }
