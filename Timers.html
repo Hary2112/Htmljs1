@@ -1,0 +1,25 @@
+<button onclick="stopInterval()">Stop Interval</button>
+<button onclick="stopTimeout()">Stop Timeout</button>
+<h2 id="myid"></h2>
+<script>
+    let intervalid=setInterval(myfunction,1000);
+    let timeoutid=setTimeout(myfunction2,6000);
+    function myfunction(){
+        display("Interval");
+    }
+    function myfunction2(){
+        display("Timeout");
+    }
+    function display(Str){
+        let data=document.getElementById("myid");
+        data.innerHTML+=Str+"<br>";
+    }
+    function stopInterval(){
+        clearInterval(intervalid);
+        display("Interval Stopped");
+    }
+    function stopTimeout(){
+        clearTimeout(timeoutid);
+        display("Timeout Stopped");
+    }
+</script>
